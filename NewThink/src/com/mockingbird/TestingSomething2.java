@@ -108,7 +108,7 @@ public void printHorzArray(int i, int j){
 		}
 		System.out.println();
 		}
-	
+/*	
 	// This bubble sort will sort everything from 
 	// smallest to largest
 		public void bubbleSort(){
@@ -138,8 +138,7 @@ public void printHorzArray(int i, int j){
 			theArray[indexTwo] = temp;
 			
 		}
-		
-/*		
+				
 		// The Binary Search is quicker than the linear search
 		// because all the values are sorted. Because everything
 		// is sorted once you get to a number larger than what
@@ -154,23 +153,14 @@ public void printHorzArray(int i, int j){
 			int highIndex = arraySize - 1;
 			
 			while(lowIndex <= highIndex){
-				
 				int middleIndex = (highIndex + lowIndex) / 2;
-				
 				if(theArray[middleIndex] < value) lowIndex = middleIndex + 1;
-				
 				else if(theArray[middleIndex] > value) highIndex = middleIndex - 1;
-				
 				else {
-					
 					System.out.println("\nFound a Match for " + value + " at Index " + middleIndex);
-					
 					lowIndex = highIndex + 1;
-					
 				}
-				
 				printHorzArray(middleIndex, -1);
-				
 			}
 			
 		}
@@ -183,24 +173,19 @@ public void printHorzArray(int i, int j){
 			
 			for(int x=0; x < arraySize; x++){
 				  int minimum = x;
-				  
 				  for(int y=x; y < arraySize; y++){
-				  
 					  // To change direction of sort just change 
 					  // this from > to <
-					  
 					  if(theArray[minimum]>theArray[y]){
 						  minimum = y;
 					  }
 				  }
-				  
 				  swapValues(x, minimum);
-				  
 				  printHorzArray(x, -1);
 			}
 			
 		}
-		
+*/		
 		// The Insertion Sort is normally the best of 
 		// the elementary sorts. Unlike the other sorts that
 		// had a group sorted at any given time, groups are
@@ -214,30 +199,24 @@ public void printHorzArray(int i, int j){
 				  while ((j > 0) && (theArray[j-1] > toInsert)){
 					  theArray[j] = theArray[j-1];
 					  j--;
-					  
 					  printHorzArray(i, j);
-					  
 				  }
 				  theArray[j] = toInsert;
-				  
 				  printHorzArray(i, j);
-				  
 				  System.out.println("\nArray[i] = " + theArray[i] + " Array[j] = " + theArray[j] + " toInsert = " + toInsert + "\n");
-				  
 			}
 			
-		}
-*/	
+		}	
 	public static void main(String[] args){
 		
 		TestingSomething2 newArray = new TestingSomething2();
 		newArray.generateRandomArray();
 		newArray.printHorzArray(-1,-1);
 		// newArray.linearSearchForValue(10);
-		newArray.bubbleSort();
+		// newArray.bubbleSort();
 		// We must Sort first
 		// newArray.binarySearchForValue(17);
 		// newArray.selectionSort();
-		// newArray.insertionSort();
+		newArray.insertionSort();
 	}
 }
