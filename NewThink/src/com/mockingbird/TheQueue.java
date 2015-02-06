@@ -75,7 +75,7 @@ public class TheQueue {
 	public void peek(){
 		
 		System.out.println("The First Element is " + queueArray[front]);
-		
+	
 	}
 	
 	public void displayTheQueue(){

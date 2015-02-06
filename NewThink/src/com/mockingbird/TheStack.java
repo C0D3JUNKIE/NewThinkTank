@@ -129,7 +129,7 @@ public static void main(String[] args){
 	// Add many to the stack
 	theStack.pushMany("R E D R U M");
 	// Remove all from the stack
-	// theStack.popAll();
+	theStack.popAll();
 	// Remove all from the stack and print them
 	theStack.popDisplayAll();
 	theStack.displayTheStack();
