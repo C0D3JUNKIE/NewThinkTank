@@ -1,7 +1,11 @@
 package com.mockingbird;
 
-import java.util.Arrays;
+/*This code is based on Derek Banas NewThinkTank Tuts (http://www.newthinktank.com) - AAB working on some testing of various
+ * data structures in java.  C0D3JUNKIE wuz here!
+ * 02/03/2014
+ */
 
+import java.util.Arrays;
 
 public class TheQueue {
 	
